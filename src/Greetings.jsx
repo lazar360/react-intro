@@ -1,10 +1,20 @@
 export function Greetings(props) {
-    console.log(props);
+  console.log(props);
+
+  
     return (
-    <ul>
-      <li>Hello {props.firstName}</li>
-      <li>My</li>
-      <li>Friend</li>
-    </ul>
-  );
+      <ul>
+        <li>Hello {props.firstName}</li>
+        <li>You are {props.age} years old</li>
+        <li>Friend</li>
+        <li>{props.isSunny ? <ItsSunny /> : <ItsRainy/>}</li>
+      </ul>
+    );
+}
+
+function ItsSunny(){
+    return "Il fait beau"
+}
+function ItsRainy(){
+    return "Il pleut"
 }
