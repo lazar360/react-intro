@@ -1,3 +1,10 @@
+import { Greetings } from "./Greetings"
+
 export function App(){
-    return "Hello";
+    return (
+        <>
+        <h1>Hello to the React World</h1>
+        <Greetings></Greetings>
+        </>
+    )
 }
