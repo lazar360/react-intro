@@ -1,4 +1,4 @@
-import { Greetings } from "./Greetings";
+import { Greetings } from "./Greetings/Greetings";
 import { AgeCounter } from "./AgeCounter";
 import "./global.css";
 

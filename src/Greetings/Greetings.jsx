@@ -1,10 +1,10 @@
+import s from "./style.module.css";
+
 export function Greetings(props) {
   console.log(props);
-
-  
     return (
-      <ul>
-        <li>Hello {props.firstName}</li>
+      <ul >
+        <li className={s.li}>Hello {props.firstName}</li>
         <li>You are {props.age} years old</li>
         <li>Friend</li>
         <li>{props.isSunny ? <ItsSunny /> : <ItsRainy/>}</li>
