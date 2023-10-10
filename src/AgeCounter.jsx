@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AgeDisplay } from "./AgeDisplay";
 
 export function AgeCounter() {
     const [age, setAge] = useState(30);
@@ -10,7 +11,7 @@ export function AgeCounter() {
         <>
           <button onClick={increaseAge}>Increase age</button>
           <br/>
-          <h3>You are {age} years old</h3>
+          <AgeDisplay age={age} />
         </>
       );
   }
