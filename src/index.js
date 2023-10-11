@@ -1,5 +1,5 @@
 // Importer les outils react
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // Importer notre premier composant App
 import{ App } from "./App";
