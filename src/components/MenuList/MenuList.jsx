@@ -1,11 +1,17 @@
 import { MenuListItem } from "../MenuListItem/MenuListItem";
-import s from "./style.module.css"
+import s from "./style.module.css";
 
-export function MenuList(props) {
-  return <div className={s.container}>
-    <MenuListItem difficulty="Low"></MenuListItem>
-    <MenuListItem difficulty="Medium"></MenuListItem>
-    <MenuListItem difficulty="High"></MenuListItem>
-    <MenuListItem difficulty="Insane"></MenuListItem>
-  </div>;
+export function MenuList({ difficulty, onItemClick }) {
+  return (
+    <div className={s.container}>
+      <MenuListItem
+        onClick={onItemClick}
+        difficulty="Low"
+        isSelected={difficulty == "Low"}
+      ></MenuListItem>
+      <MenuListItem onClick={onItemClick} difficulty="Medium" isSelected={difficulty == "Medium"}></MenuListItem>
+      <MenuListItem onClick={onItemClick} difficulty="High" isSelected={difficulty == "High"}></MenuListItem>
+      <MenuListItem onClick={onItemClick} difficulty="Insane" isSelected={difficulty == "Insane"}></MenuListItem>
+    </div>
+  );
 }
