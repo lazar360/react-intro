@@ -3,7 +3,7 @@ import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficu
 export function App() {
   return (
   <>
-  <DisplayDifficulty />
+  <DisplayDifficulty difficulty = "Low" />
   </>
   )
   
